@@ -1,0 +1,39 @@
+/* footer */
+.footer {
+    width: 100vw;
+    border-top: $color-dark-green 2px solid;
+    
+    &-container {
+        padding: 26px 18px 26px 18px;
+        color: $text-color-dark;
+        font-size: 11px;
+        line-height: 14px; 
+    }
+
+    &-social
+        a {
+            padding-right: 8px;
+        }
+
+    &-policy
+        .policy-links {
+            text-decoration: underline;
+        }
+
+        &-site-links {
+            display: flex;
+            color: black;
+
+            & a:first-child::after {
+                content: "|";
+                padding: 0 6px;
+            }
+        }
+
+    @media #{$brk-desktop} {
+        .footer-container {
+            padding: 37px 37px 41px;
+        }
+    }
+}
+

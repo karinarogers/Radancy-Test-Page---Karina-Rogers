@@ -1,0 +1,301 @@
+/* ========================
+Global Imports
+===========================*/
+/* ========================
+Global Imports
+===========================*/
+/* Variables */
+/* ========================
+Base
+===========================*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+  text-decoration: none;
+  color: #888888;
+  line-height: 31px;
+  font-size: 18px;
+}
+
+main {
+  margin: 0 1rem;
+}
+
+/* Typography */
+/* typography displays differently than mockup due to font family change. applied specs used in mockup */
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  color: #00945f;
+  margin: 1rem 0;
+  /* letter-spacing: -10px; not appropriate with arial font*/
+}
+
+h1,
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+/* Links */
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ========================
+Global Imports
+===========================*/
+/* Header */
+.cb-logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.cb-logo-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 173px;
+}
+
+@media (min-width: 768px) {
+  .cb-logo-container {
+    margin-top: 4rem;
+    margin-bottom: 3.25rem;
+    margin-left: 2.25rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .cb-logo-container div {
+    width: 317px;
+  }
+}
+
+.hero-img-container {
+  width: 100%;
+}
+
+.hero-img-container img {
+  width: 100%;
+}
+
+/* Careers */
+.careers {
+  padding: 1rem;
+}
+
+/* Citizens Advantage */
+.ca-container div:not(:last-child) {
+  border-bottom: #888888 1px solid;
+}
+
+.ca-container .lrn-more {
+  color: #8dac4a;
+}
+
+@media (min-width: 768px) {
+  .ca-container {
+    margin: 18px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-row-gap: 110px;
+  }
+  .ca-container div:nth-child(odd) {
+    border-right: #888888 1px solid;
+  }
+  .ca-container div:not(:last-child) {
+    border-bottom: none;
+  }
+  .ca-container .ca-block {
+    margin: 18px 0;
+  }
+  .ca-container .ca-block:nth-child(odd) {
+    padding-right: 3.5rem;
+  }
+  .ca-container .ca-block:nth-child(even) {
+    padding-left: 3.5rem;
+  }
+  .ca-container .ca-block h3 {
+    margin: 0;
+  }
+  .ca-container .ca-block p {
+    margin-bottom: 0;
+  }
+}
+
+/* CB Home Loans Aside */
+.cb-home-loans {
+  background-color: #ebf7f5;
+  margin-top: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+.cb-home-loans h3 {
+  background-color: #00945f;
+  color: white;
+  padding: 20px 24px;
+  text-align: center;
+}
+
+.cb-home-loans p {
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .cb-home-loans {
+    margin: 2.25rem 1.4rem;
+  }
+  .cb-home-loans p {
+    padding: 1.9rem 4rem 2.4rem;
+  }
+}
+
+/* Testimonials */
+.testimonials-container .testimonial-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.25rem;
+}
+
+.testimonials-container .testimonial-block blockquote {
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+  max-width: 200px;
+  padding: 5px;
+  text-align: center;
+  font-style: italic;
+  /* letter-spacing: -10px; not appropriate with arial font*/
+  line-height: 29px;
+  color: #666666;
+  background: url("../assets/quotation-66x55.png") no-repeat left top;
+}
+
+.testimonials-container .testimonial-block .quote-speaker {
+  text-align: center;
+  color: #00945f;
+  margin-top: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .testimonials-container .testimonial-block blockquote {
+    max-width: 2000px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonials-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-column-gap: 5rem;
+            column-gap: 5rem;
+    margin: 2rem 4.5rem 7.25rem;
+  }
+  .testimonials-container blockquote {
+    margin: 0;
+  }
+}
+
+/* footer */
+.footer {
+  width: 100vw;
+  border-top: #00945f 2px solid;
+}
+
+.footer-container {
+  padding: 26px 18px 26px 18px;
+  color: #666666;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.footer-social a {
+  padding-right: 8px;
+}
+
+.footer-policy .policy-links {
+  text-decoration: underline;
+}
+
+.footer-site-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+}
+
+.footer-site-links a:first-child::after {
+  content: "|";
+  padding: 0 6px;
+}
+
+@media (min-width: 1024px) {
+  .footer .footer-container {
+    padding: 37px 37px 41px;
+  }
+}
+
+/* ========================
+Global Imports
+===========================*/
+/* Buttons */
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-container button {
+  padding: 10px 23px;
+  margin: 2rem auto;
+  border: none;
+  background-color: #e97300;
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* green divider */
+.green-divider {
+  background: #00945f;
+  width: 73px;
+  height: 2px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=application.css.map */

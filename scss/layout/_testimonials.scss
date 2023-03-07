@@ -1,0 +1,46 @@
+/* Testimonials */
+.testimonials-container {
+    .testimonial-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2.25rem;
+
+        blockquote {
+            margin-top: 0.7rem;
+            margin-bottom: 0;
+            max-width: 200px;
+            padding: 5px;
+            text-align: center;
+            font-style: italic;
+            /* letter-spacing: -10px; not appropriate with arial font*/
+            line-height: 29px;
+            color: $text-color-dark;
+            background: url("../assets/quotation-66x55.png") no-repeat left top;
+        }
+
+        .quote-speaker {
+            text-align: center;
+            color: $color-dark-green;
+            margin-top: 1.75rem;
+        }
+
+        @media #{$brk-tablet} {
+            blockquote {
+                max-width: 2000px;
+            }
+        }
+    }
+
+    @media #{$brk-desktop} {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 5rem;
+        margin: 2rem 4.5rem 7.25rem;
+
+        blockquote {
+            margin: 0;
+        }
+    }
+}

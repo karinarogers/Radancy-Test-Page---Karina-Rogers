@@ -1,0 +1,26 @@
+/* CB Home Loans Aside */
+.cb-home-loans {
+    background-color: $color-pale-green;
+    margin-top: 2.25rem;
+    margin-bottom: 2rem;
+
+    h3 {
+        background-color: $color-dark-green;
+        color: white;
+        padding: 20px 24px;
+        text-align: center;
+    }
+
+    p {
+        padding: 0.5rem;
+    }
+
+    @media #{$brk-tablet} {
+            margin: 2.25rem 1.4rem;  
+        
+            p {
+                padding: 1.9rem 4rem 2.4rem;     
+        }
+    }
+}
+

@@ -1,0 +1,48 @@
+/* ========================
+Base
+===========================*/
+
+*, *::before, *::after  {
+    box-sizing: border-box;
+ }
+ 
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: arial, sans-serif;
+     text-decoration: none;
+     color: $text-color; 
+     line-height: 31px;
+     font-size: 18px;
+ }
+ 
+ main {
+     margin: 0 1rem;
+ }
+ 
+ /* Typography */
+ /* typography displays differently than mockup due to font family change. applied specs used in mockup */
+ h1,
+ h2,
+ h3 {
+     font-weight:400;
+     color: $color-dark-green;
+     margin: 1rem 0;
+     /* letter-spacing: -10px; not appropriate with arial font*/
+ }
+ 
+ h1, 
+ h2 {
+     font-size: 30px;
+     text-align: center;
+ }
+ 
+ h3{
+     font-size: 24px;
+ }
+ 
+ /* Links */
+ a, a:visited, a:hover, a:active {
+     text-decoration: none;
+     color: inherit;
+ }

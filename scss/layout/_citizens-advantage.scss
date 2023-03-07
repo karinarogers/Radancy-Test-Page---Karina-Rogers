@@ -1,0 +1,47 @@
+/* Citizens Advantage */
+.ca-container {
+    div:not(:last-child) {
+        border-bottom: $text-color 1px solid;
+    }
+
+    .lrn-more {
+        color: $color-lime-green;
+    }
+
+    @media #{$brk-tablet} {
+        margin: 18px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 110px;
+    
+    
+        div:nth-child(odd){
+            border-right: $text-color 1px solid;
+        }
+        
+        div:not(:last-child){
+            border-bottom: none;
+        }
+
+        .ca-block {
+            margin: 18px 0;
+        
+        
+            &:nth-child(odd) {
+                padding-right: 3.5rem;
+            }
+            
+            &:nth-child(even) {
+                padding-left: 3.5rem;
+            }
+            
+            h3 {
+                margin: 0;
+            }
+            
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

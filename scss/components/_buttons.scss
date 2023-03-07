@@ -1,0 +1,15 @@
+/* Buttons */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    button {
+        padding: 10px 23px;
+        margin: 2rem auto;
+        border: none;
+        background-color: $color-orange;
+        color: white;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+}
