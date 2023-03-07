@@ -9,6 +9,11 @@
     div {
         display: flex;
         width: 173px;
+
+        img {
+            display: inline-block; 
+            width: 100%;
+        }
     }
 
     @media #{$brk-tablet} {
@@ -25,9 +30,7 @@
 
 .hero-img-container {
     width: 100%;
-    // min-width: 300px;
-    // height: 201px;
-    // background: url("../assets/hero-321x201.jpg") no-repeat center;
+
     img {
         width: 100%;
     }

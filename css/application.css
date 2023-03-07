@@ -77,6 +77,11 @@ Global Imports
   width: 173px;
 }
 
+.cb-logo-container div img {
+  display: inline-block;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .cb-logo-container {
     margin-top: 4rem;
